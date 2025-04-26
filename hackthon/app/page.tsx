@@ -14,10 +14,11 @@ import {
   Clock,
   Trophy,
   Award,
+  MapPin,
   Github,
   Linkedin,
   Twitter,
-} from "lucide-react"
+} from "lucide-react" 
 import Link from "next/link"
 import Image from "next/image"
 
@@ -139,6 +140,9 @@ export default function HackathonPage() {
 
             {/* Countdown Timer */}
             <div className="mb-12">
+              <h2 className="mb-6 flex items-center justify-center gap-2 text-2xl font-bold">
+              <MapPin className="h-6 w-6 text-[#ff1700]"/> NCIT,Balkumari, Lalitpur
+              </h2>
               <h2 className="mb-6 flex items-center justify-center gap-2 text-2xl font-bold">
                 <Clock className="h-6 w-6 text-[#ff1700]" />
                 Hackathon Starts In
@@ -479,9 +483,9 @@ export default function HackathonPage() {
             <div>
               <h4 className="mb-4 font-semibold">Contact</h4>
               <address className="not-italic text-gray-400">
-                <p>Email: info@hackfusion.com</p>
-                <p>Phone: +1 (123) 456-7890</p>
-                <p>Location: Tech Hub, Innovation Street, Digital City</p>
+                <p>Email: hackfornepal82@gmail.com</p>
+                <p>Phone: 9846684225, 9864772330</p>
+                <p>Location: Nepal College Of Information Technology, Balkumari, Lalitpur</p>
               </address>
             </div>
           </div>
