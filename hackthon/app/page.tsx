@@ -113,13 +113,13 @@ export default function HackathonPage() {
 
   const committeeMembers = [
     {
-      name: "Prabesh Raj Pant",
-      role: "xyz",
+      name: "Suyog Bajimayo",
+      role: "Sponsors",
       photo: "/placeholder.svg?height=300&width=300",
     },
     {
-      name: "xadf",
-      role: "abc",
+      name: "Prabesh Raj Pant",
+      role: "Technical",
       photo: "/placeholder.svg?height=300&width=300",
     },
     {
