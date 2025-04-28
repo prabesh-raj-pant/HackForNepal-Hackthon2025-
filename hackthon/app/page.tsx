@@ -65,7 +65,7 @@ export default function HackathonPage() {
     }, 1000)
 
     return () => clearInterval(timer)
-  }, [HACKATHON_DATE])
+  }, [])
 
   // Format date for display
   const formattedEventDate = HACKATHON_DATE.toLocaleDateString("en-US", {
@@ -501,7 +501,7 @@ export default function HackathonPage() {
               >
                 <div className="overflow-hidden rounded-lg border border-gray-200 shadow-lg">
                   <Image
-                    src="/placeholder.svg?height=300&width=300"
+                    src="/social media logo.png?height=300&width=300"
                     alt="Hackathon participants"
                     width={300}
                     height={300}
@@ -514,8 +514,8 @@ export default function HackathonPage() {
         </div>
       </section>
 
-      {/* Sponsors Section */}
-      <section className="relative z-10 bg-white py-20">
+ {/* Sponsors Section */}
+ <section className="relative z-10 bg-white py-20">
         <div className="container mx-auto px-4">
           <motion.div
             initial={{ opacity: 0 }}
@@ -530,16 +530,23 @@ export default function HackathonPage() {
             </p>
 
             <div className="grid grid-cols-2 gap-8 md:grid-cols-4">
-              {[...Array(4)].map((_, i) => (
-                <div key={i} className="flex items-center justify-center">
+              {[
+                { name: "NCIT", logo: "https://imgs.search.brave.com/vz7bW4umANAY0r5deE1OGatgVodB2Ax-ew0JOKYg-XM/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9sbXMu/bmNpdC5lZHUubnAv/bmNpdF9sb2dvLmpw/Zw" },
+                { name: "Digital Himalaya", logo: "/placeholder.svg?height=60&width=120" },
+                { name: "Kathmandu Innovations", logo: "/placeholder.svg?height=60&width=120" },
+                { name: "Nepal Tech Hub", logo: "/placeholder.svg?height=60&width=120" },
+              ].map((partner, i) => (
+                <div key={i} className="flex flex-col items-center justify-center">
                   <div className="h-24 w-48 rounded-lg border border-gray-200 bg-white p-4 shadow-md">
-                    <div className="flex h-full items-center justify-center">
+                    <div className="flex h-full flex-col items-center justify-center">
                       <Image
-                        src="/placeholder.svg?height=60&width=120"
-                        alt={`Partner ${i + 1}`}
+                        src={partner.logo || "/placeholder.svg"}
+                        alt={`${partner.name} logo`}
                         width={120}
                         height={60}
+                        className="mb-2"
                       />
+                      <p className="text-sm font-medium text-gray-700">{partner.name}</p>
                     </div>
                   </div>
                 </div>
@@ -548,7 +555,6 @@ export default function HackathonPage() {
           </motion.div>
         </div>
       </section>
-
       {/* Organizing Committee Section */}
       <section className="relative z-10 py-20 bg-gray-50">
         <div className="container mx-auto px-4">
