@@ -3,9 +3,9 @@ import "@/app/globals.css"
 import { ThemeProvider } from "@/components/theme-provider"
 
 export const metadata = {
-  title: "Hack For Nepal - The Ultimate Hackathon Experience",
+  title: "HACK FOR NEPAL - Innovation for Nepal's Future",
   description:
-    "Join the most innovative hackathon of the year. Build, collaborate, and transform your ideas into reality.",
+    "Join the most innovative hackathon focused on building solutions for Nepal. Collaborate and transform your ideas into impactful projects.",
 }
 
 export default function RootLayout({
