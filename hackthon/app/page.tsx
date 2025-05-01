@@ -154,7 +154,7 @@ export default function HackathonPage() {
     {
       question: "Are there any costs to participate?",
       answer:
-        "yes registration fee is NRP2000 and should be paid after selection. We cover food, refreshments, and provide a comfortable workspace for the duration of the event.",
+        "This is a paid hackathon. A registration fee of 2000 per team will be collected only after your team is shortlisted for participation.Payment details and instructions will be shared via email upon selection.Your application will be reviewed based on creativity, motivation, and team skills. We cover food, refreshments, and provide a comfortable workspace for the duration of the event.",
     },
     {
       question: "Will there be prizes?",
