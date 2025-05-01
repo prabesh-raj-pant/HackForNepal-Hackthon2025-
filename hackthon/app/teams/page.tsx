@@ -105,7 +105,7 @@ export default function TeamsPage() {
                             <Input
                                 type="text"
                                 placeholder="Search teams or colleges..."
-                                className="pl-10"
+                                className="pl-10 bg-white"
                                 value={searchTerm}
                                 onChange={(e) => setSearchTerm(e.target.value)}
                             />
