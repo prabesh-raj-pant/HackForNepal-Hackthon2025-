@@ -3,7 +3,7 @@ import "@/app/globals.css"
 import { ThemeProvider } from "@/components/theme-provider"
 
 export const metadata = {
-  title: "HACK FOR NEPAL - Innovation for Nepal's Future",
+  title: "HACK FOR NEPAL ",
   description:
     "Join the most innovative hackathon focused on building solutions for Nepal. Collaborate and transform your ideas into impactful projects.",
 }

@@ -12,23 +12,31 @@ export default function AboutPage() {
   const committeeMembers = [
     {
       name: "Prabesh Raj Pant",
-      role: "xyz",
-      photo: "/placeholder.svg?height=300&width=300",
+      role: "Technical Lead and Program Cordinator ",
+      photo: "/prabesh.jpeg?height=300&width=300",
+      githublink:"https://github.com/prabesh-raj-pant",
+      linkedlink:"https://www.linkedin.com/in/prabesh-raj-pant-450931232/",
     },
     {
-      name: "xadf",
-      role: "abc",
-      photo: "/placeholder.svg?height=300&width=300",
+      name: "Suyog Bajimayo",
+      role: "Sponsor Team Manager",
+      photo: "/suyog.jpeg?height=300&width=300",
+      githublink:"https://github.com/bsuyog1",
+      linkedlink:"https://www.linkedin.com/in/suyog-bajimayo-47b35323a/",
     },
     {
-      name: "abc",
-      role: "sbc",
-      photo: "/placeholder.svg?height=300&width=300",
+      name: "Aaman Shrestha",
+      role: "Logistic Manager",
+      photo: "/aaman.jpeg?height=300&width=300",
+      githublink:"https://github.com/amanstha19",
+      linkedlink:"#",
     },
     {
-      name: "abc",
-      role: "xyz",
-      photo: "/placeholder.svg?height=300&width=300",
+      name: "Subekshya Bajimayo",
+      role: "Social Media Manager",
+      photo: "/subekshya.jpeg?height=300&width=300",
+      githublink:"https://github.com/subsssssss34",
+      linkedlink:"https://www.linkedin.com/in/subekshya-bajimayo-0a1403246/",
     },
   ];
 
@@ -38,22 +46,6 @@ export default function AboutPage() {
       <div className="fixed inset-0 z-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZGVmcz48cGF0dGVybiBpZD0iZ3JpZCIgd2lkdGg9IjYwIiBoZWlnaHQ9IjYwIiBwYXR0ZXJuVW5pdHM9InVzZXJTcGFjZU9uVXNlIj48cGF0aCBkPSJNIDYwIDAgTCAwIDAgMCA2MCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjZTJlOGYwIiBzdHJva2Utd2lkdGg9IjEuNSIgLz48L3BhdHRlcm4+PC9kZWZzPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JpZCkiIC8+PC9zdmc+')] opacity-[0.15]"></div>
 
       <NavBar />
-
-      {/* About Hero Section */}
-      <section className="relative z-10 py-16 md:py-24">
-        <div className="container mx-auto px-4">
-          <div className="mx-auto max-w-3xl text-center">
-            <h1 className="mb-6 text-4xl font-bold md:text-5xl">
-              <span className="text-red-600">About </span>
-              <span className="text-blue-700">HackForNepal</span>
-            </h1>
-            <p className="mb-8 text-xl text-gray-600">
-              Learn more about our mission, vision, and the team behind Nepal's
-              biggest hackathon.
-            </p>
-          </div>
-        </div>
-      </section>
 
       {/* Mission & Vision Section */}
       <section className="relative z-10 bg-white py-16">
@@ -138,19 +130,13 @@ export default function AboutPage() {
                     />
                     <div className="absolute bottom-0 left-0 right-0 flex justify-center space-x-3 p-4 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
                       <Link
-                        href="#"
+                        href={member.linkedlink}
                         className="flex h-8 w-8 items-center justify-center rounded-full bg-white/80 text-gray-700 backdrop-blur-sm hover:bg-blue-600 hover:text-white"
                       >
                         <Linkedin className="h-4 w-4" />
                       </Link>
                       <Link
-                        href="#"
-                        className="flex h-8 w-8 items-center justify-center rounded-full bg-white/80 text-gray-700 backdrop-blur-sm hover:bg-blue-600 hover:text-white"
-                      >
-                        <Twitter className="h-4 w-4" />
-                      </Link>
-                      <Link
-                        href="#"
+                        href={member.githublink}
                         className="flex h-8 w-8 items-center justify-center rounded-full bg-white/80 text-gray-700 backdrop-blur-sm hover:bg-blue-600 hover:text-white"
                       >
                         <Github className="h-4 w-4" />
