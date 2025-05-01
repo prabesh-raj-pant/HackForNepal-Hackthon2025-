@@ -6,7 +6,7 @@ export const formatDate = (date: Date): string => {
   });
 };
 
-const registrationDeadline: Date = new Date("2025-05-30T23:59:59");
+const registrationDeadline: Date = new Date("2025-05-21T23:59:59");
 const now: Date = new Date();
 
 export const isRegistrationClosed: boolean = now > registrationDeadline;
