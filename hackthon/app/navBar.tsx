@@ -22,7 +22,7 @@ export default function NavBar() {
             href="/about"
             className="font-medium text-gray-800 hover:text-blue-700"
           >
-            About
+            About us
           </Link>
           <Link
             href="/#Themes"
