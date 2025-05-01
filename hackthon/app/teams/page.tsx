@@ -152,7 +152,7 @@ export default function TeamsPage() {
                                     whileHover={{ y: -5 }}
                                 >
                                     
-                                    <Card className="h-full overflow-hidden border-gray-200 shadow-lg transition-shadow hover:shadow-xl">
+                                    <Card className="h-full overflow-hidden bg-white border-gray-200 shadow-lg transition-shadow hover:shadow-xl">
                                         <CardHeader className="bg-gradient-to-r from-blue-600 to-teal-600 pb-3 pt-3">
                                             <CardTitle className="text-white">{team.teamName}</CardTitle>
                                         </CardHeader>
