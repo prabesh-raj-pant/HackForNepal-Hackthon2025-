@@ -100,7 +100,7 @@ export default function TeamsPage() {
                                 <span className="text-gray-800"> Teams</span>
                             </h1>
                         </div>
-                        <div className="relative w-full md:w-72">
+                        <div className="relative w-full bg-white md:w-72">
                             <Search className="absolute left-3 bg-white top-1/2 h-4 w-4 -translate-y-1/2 text-gray-400" />
                             <Input
                                 type="text"
