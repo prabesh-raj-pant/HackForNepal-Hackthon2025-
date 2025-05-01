@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import { isRegistrationClosed } from "./helper";
 
 export default function NavBar() {
   return (
@@ -41,15 +42,17 @@ export default function NavBar() {
           >
             FAQ
           </Link>
-          <a
-            href="https://docs.google.com/forms/d/e/1FAIpQLScecCm1AM_sLMJ3Q6d_A4eqT-aVrLxJpNRuSqoNYA98oXv5-Q/viewform?usp=header" // Replace with your actual form link
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Button className="bg-red-600 hover:bg-red-700">
-              Register Now
-            </Button>
-          </a>
+          {!isRegistrationClosed && (
+            <a
+              href="https://docs.google.com/forms/d/e/1FAIpQLScecCm1AM_sLMJ3Q6d_A4eqT-aVrLxJpNRuSqoNYA98oXv5-Q/viewform"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button size="lg" className="bg-red-600 hover:bg-red-700">
+                Register Now
+              </Button>
+            </a>
+          )}
         </nav>
 
         {/* Mobile menu button would go here */}

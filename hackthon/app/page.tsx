@@ -24,6 +24,11 @@ import {
   Utensils,
 } from "lucide-react";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import {
+  formattedDeadline,
+  isRegistrationClosed,
+  registrationStatusMessage,
+} from "./helper";
 import { useEffect, useState } from "react";
 
 import { Button } from "@/components/ui/button";
@@ -37,6 +42,7 @@ export default function HackathonPage() {
   // ===== CONFIGURE YOUR HACKATHON DATE HERE =====
   // Format: YYYY, MM (0-11), DD, HH, MM, SS
   // Note: Month is 0-indexed (0 = January, 11 = December)
+
   const HACKATHON_DATE = new Date(2025, 4, 29, 9, 0, 0); // May 29, 2025 at 9:00 AM
   // =============================================
 
@@ -79,10 +85,6 @@ export default function HackathonPage() {
 
     return () => clearInterval(timer);
   }, []);
-
-  const registrationDeadline = new Date("2025-05-30T23:59:59"); // adjust as needed
-  const now = new Date();
-  const isRegistrationClosed = now > registrationDeadline;
 
   // Format date for display
   const formattedEventDate = HACKATHON_DATE.toLocaleDateString("en-US", {
@@ -204,31 +206,16 @@ export default function HackathonPage() {
             </div>
 
             {/* Registration Deadline */}
+
             <div className="text-sm text-gray-700">
               <span
-                className={`inline-block rounded-md px-3 py-1 font-semibold ${
-                  isRegistrationClosed
-                    ? "bg-gray-200 text-gray-500"
-                    : "bg-red-100 text-red-600"
+                className={`inline-block rounded-md px-3 py-1  font-semibold ${
+                  !isRegistrationClosed
+                    ? "bg-red-100 text-red-600"
+                    : "bg-gray-200 text-gray-600"
                 }`}
               >
-                {isRegistrationClosed
-                  ? `Registration Closed on ${registrationDeadline.toLocaleDateString(
-                      "en-US",
-                      {
-                        month: "long",
-                        day: "numeric",
-                        year: "numeric",
-                      }
-                    )}`
-                  : `Deadline: ${registrationDeadline.toLocaleDateString(
-                      "en-US",
-                      {
-                        month: "long",
-                        day: "numeric",
-                        year: "numeric",
-                      }
-                    )}`}
+                {registrationStatusMessage}
               </span>
             </div>
           </div>
