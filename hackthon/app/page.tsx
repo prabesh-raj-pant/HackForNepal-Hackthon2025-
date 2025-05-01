@@ -154,7 +154,7 @@ export default function HackathonPage() {
     {
       question: "Are there any costs to participate?",
       answer:
-        "HackForNepal is completely free for all selected participants. We cover food, refreshments, and provide a comfortable workspace for the duration of the event.",
+        "yes registration fee is NRP2000 and should be paid after selection. We cover food, refreshments, and provide a comfortable workspace for the duration of the event.",
     },
     {
       question: "Will there be prizes?",
@@ -272,7 +272,7 @@ export default function HackathonPage() {
           <div className="flex flex-wrap justify-center gap-4">
             {!isRegistrationClosed && (
               <a
-                href="https://docs.google.com/forms/d/e/1FAIpQLScecCm1AM_sLMJ3Q6d_A4eqT-aVrLxJpNRuSqoNYA98oXv5-Q/viewform"
+                href="https://docs.google.com/forms/d/e/1FAIpQLSe1DGPWpafMmlmWPxroWEYxyC6bzB--N66jiKQm0ctxzoy0XA/viewform?usp=header"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -282,7 +282,7 @@ export default function HackathonPage() {
               </a>
             )}
 
-            <Link href="/teams">
+            {/* <Link href="/teams">
               <Button
                 variant="outline"
                 size="lg"
@@ -290,7 +290,7 @@ export default function HackathonPage() {
               >
                 View Teams
               </Button>
-            </Link>
+            </Link> */}
           </div>
         </div>
       </section>

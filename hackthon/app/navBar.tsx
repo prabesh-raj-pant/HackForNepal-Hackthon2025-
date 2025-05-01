@@ -44,7 +44,7 @@ export default function NavBar() {
           </Link>
           {!isRegistrationClosed && (
             <a
-              href="https://docs.google.com/forms/d/e/1FAIpQLScecCm1AM_sLMJ3Q6d_A4eqT-aVrLxJpNRuSqoNYA98oXv5-Q/viewform"
+              href="https://docs.google.com/forms/d/e/1FAIpQLSe1DGPWpafMmlmWPxroWEYxyC6bzB--N66jiKQm0ctxzoy0XA/viewform?usp=header"
               target="_blank"
               rel="noopener noreferrer"
             >
