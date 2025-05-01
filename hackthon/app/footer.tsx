@@ -1,4 +1,4 @@
-import { Github, Instagram, Linkedin, Twitter } from "lucide-react";
+import { Github, Instagram, Facebook,  } from "lucide-react";
 
 import Link from "next/link";
 import { motion } from "framer-motion";
@@ -60,24 +60,14 @@ export default function Footer() {
             <div className="flex gap-4">
               {[
                 {
-                  name: "Twitter",
-                  icon: Twitter,
-                  url: "https://twitter.com/HackForNepal",
-                },
-                {
-                  name: "LinkedIn",
-                  icon: Linkedin,
-                  url: "https://linkedin.com/company/hackfornepal",
-                },
-                {
-                  name: "GitHub",
-                  icon: Github,
-                  url: "https://github.com/HackForNepal",
+                  name: "Facebook",
+                  icon: Facebook,
+                  url: "https://www.facebook.com/profile.php?id=61574972562771",
                 },
                 {
                   name: "Instagram",
                   icon: Instagram,
-                  url: "https://instagram.com/hackfornepal",
+                  url: "https://www.instagram.com/hackfornepal/",
                 },
               ].map((platform, i) => (
                 <motion.div key={i} whileHover={{ y: -3 }}>
