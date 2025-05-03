@@ -410,9 +410,7 @@ export default function HackathonPage() {
                   Innovation Sprint
                 </h3>
                 <p className="text-gray-600">
-                  A hackathon is an intensive event where programmers,
-                  designers, and domain experts collaborate to create innovative
-                  solutions to challenging problems in a limited timeframe.
+                  A hackathon is an intensive event where talented young minds collaborate to create innovative solutions to challenging problems in a limited timeframe.
                 </p>
               </div>
               <div className="rounded-lg border border-gray-200 bg-white p-6 shadow-lg">
@@ -1031,10 +1029,6 @@ export default function HackathonPage() {
                 {
                   name: "NOSk",
                   logo: "https://nosk.org.np/site/images/nosk-logo.png?height=60&width=120",
-                },
-                {
-                  name: "NTC",
-                  logo: "https://tekcommunity.ncit.edu.np/resources/img/NTC_LOGO.png?height=60&width=120",
                 },
               ].map((partner, i) => (
                 <div
