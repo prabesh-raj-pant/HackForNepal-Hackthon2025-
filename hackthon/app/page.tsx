@@ -144,7 +144,7 @@ export default function HackathonPage() {
     {
       question: "Do I need to have a team?",
       answer:
-        "While we encourage team participation (teams of 3–4 members), individual registrations are also welcome. Teams that include at least one female member are especially encouraged.",
+        "While we encourage team participation (teams of 2–4 members), individual registrations are also welcome. Teams that include at least one female member are especially encouraged.",
     },
     {
       question: "What should I bring to the hackathon?",
