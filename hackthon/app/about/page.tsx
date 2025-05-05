@@ -39,7 +39,7 @@ export default function AboutPage() {
       linkedlink:"https://www.linkedin.com/in/subekshya-bajimayo-0a1403246/",
     },
     {
-      name: "Rushal Bhattrai",
+      name: "Rushal Ghatane",
       role: "Technical Team",
       photo: "/rushal.jpeg?height=300&width=300",
       githublink:"https://github.com/trashhpandaaaa",
