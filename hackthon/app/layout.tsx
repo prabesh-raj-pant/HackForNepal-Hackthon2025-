@@ -21,8 +21,8 @@ export default function RootLayout({
       <body>
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem disableTransitionOnChange>
           {children}
-          <Analytics mode="production" />;
         </ThemeProvider>
+          <Analytics mode="production" />;
       </body>
     </html>
   )
