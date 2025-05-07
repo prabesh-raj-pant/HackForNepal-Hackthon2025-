@@ -11,29 +11,29 @@ import { motion } from "framer-motion";
 export default function AboutPage() {
   const committeeMembers = [
     {
-      name: "Prabesh Raj Pant",
-      role: "Technical Lead and Program Cordinator ",
-      photo: "/prabesh.jpeg?height=300&width=300",
-      githublink:"https://github.com/prabesh-raj-pant",
-      linkedlink:"https://www.linkedin.com/in/prabesh-raj-pant-450931232/",
-    },
-    {
       name: "Suyog Bajimayo",
-      role: "Sponsor Team Manager",
+      role: "Program Coordinator",
       photo: "/suyog.jpeg?height=300&width=300",
       githublink:"https://github.com/bsuyog1",
       linkedlink:"https://www.linkedin.com/in/suyog-bajimayo-47b35323a/",
+    },
+    {
+      name: "Prabesh Raj Pant",
+      role: "Technical Lead ",
+      photo: "/prabesh.jpeg?height=300&width=300",
+      githublink:"https://github.com/prabesh-raj-pant",
+      linkedlink:"https://www.linkedin.com/in/prabesh-raj-pant-450931232/",
     },
     {
       name: "Aaman Shrestha",
       role: "Logistic Manager",
       photo: "/aaman.jpeg?height=300&width=300",
       githublink:"https://github.com/amanstha19",
-      linkedlink:"#",
+      linkedlink:"https://www.linkedin.com/",
     },
     {
       name: "Subekshya Bajimayo",
-      role: "Social Media Manager",
+      role: "MArketing And Outreach Manager",
       photo: "/subekshya.jpeg?height=300&width=300",
       githublink:"https://github.com/subsssssss34",
       linkedlink:"https://www.linkedin.com/in/subekshya-bajimayo-0a1403246/",
@@ -45,6 +45,42 @@ export default function AboutPage() {
       githublink:"https://github.com/trashhpandaaaa",
       linkedlink:"https://www.linkedin.com/in/rasul-ghatane-071120257/",
     },
+    {
+      name: "Isha Bista",
+      role: "Content And Communication Manager",
+      photo: "/isha.jpeg?height=300&width=300",
+      githublink:"https://github.com/ishabistaa",
+      linkedlink:"https://www.linkedin.com/in/ishaa-bista-a6a9622b6/",
+    },
+    {
+      name: "Abishek Aryal",
+      role: "Design and Media Coordinator",
+      photo: "/abishek.jpeg?height=300&width=300",
+      githublink:"https://github.com/",
+      linkedlink:"https://www.linkedin.com/in/abishek-aryal-731b06313/",
+    },
+    {
+      name: "Santosh Achary",
+      role: "Sponsorship Manager",
+      photo: "/santosh.jpeg?height=300&width=300",
+      githublink:"https://github.com/",
+      linkedlink:"https://www.linkedin.com/",
+    },
+    {
+      name: "Prashan Ghale",
+      role: "Operations",
+      photo: "/ghale.jpeg?height=300&width=300",
+      githublink:"https://github.com/",
+      linkedlink:"https://www.linkedin.com/in/",
+    },
+    {
+      name: "Anish Khanal",
+      role: "Operations",
+      photo: "/anish.jpeg?height=300&width=300",
+      githublink:"https://github.com/",
+      linkedlink:"https://www.linkedin.com/in/",
+    },
+
   ];
 
   return (
