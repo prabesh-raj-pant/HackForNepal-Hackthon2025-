@@ -87,6 +87,13 @@ export default function AboutPage() {
       githublink:"https://github.com/",
       linkedlink:"https://www.linkedin.com/in/",
     },
+    {
+      name: "Adarsh Joshi",
+      role: "Far Western Outreach",
+      photo: "/adarsh.jpeg?height=300&width=300",
+      githublink:"https://github.com/",
+      linkedlink:"https://www.linkedin.com/in/adarsh69/",
+    },
 
   ];
 
