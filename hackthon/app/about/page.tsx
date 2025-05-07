@@ -33,7 +33,7 @@ export default function AboutPage() {
     },
     {
       name: "Subekshya Bajimayo",
-      role: "MArketing And Outreach Manager",
+      role: "Marketing And Outreach Manager",
       photo: "/subekshya.jpeg?height=300&width=300",
       githublink:"https://github.com/subsssssss34",
       linkedlink:"https://www.linkedin.com/in/subekshya-bajimayo-0a1403246/",
@@ -51,6 +51,13 @@ export default function AboutPage() {
       photo: "/isha.jpeg?height=300&width=300",
       githublink:"https://github.com/ishabistaa",
       linkedlink:"https://www.linkedin.com/in/ishaa-bista-a6a9622b6/",
+    },
+    {
+      name: "Manima Thapa",
+      role: "Content Creator",
+      photo: "/manima.jpeg?height=300&width=300",
+      githublink:"https://github.com/Manima12647",
+      linkedlink:"https://np.linkedin.com/in/manima-thapa-6593622bb",
     },
     {
       name: "Abishek Aryal",
