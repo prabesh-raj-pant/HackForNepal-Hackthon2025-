@@ -563,8 +563,7 @@ export default function HackathonPage() {
                       </h3>
                       <p className="text-sm text-gray-500">8:30 AM</p>
                       <p className="mt-2 text-gray-600">
-                        Welcome address, rules explanation, and theme
-                        announcement.
+                        Welcome address and rules explanation.
                       </p>
                     </div>
                   </motion.div>
