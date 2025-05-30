@@ -282,15 +282,15 @@ export default function HackathonPage() {
               </a>
             )}
 
-            {/* <Link href="/teams">
+            <Link href="/teams">
               <Button
                 variant="outline"
                 size="lg"
-                className="bg-red border-gray-300 text-gray-700 hover:bg-gray-100"
+                className="bg-red-500 border-gray-300 text-black-900 hover:bg-white-900"
               >
                 View Teams
               </Button>
-            </Link> */}
+            </Link> 
           </div>
         </div>
       </section>

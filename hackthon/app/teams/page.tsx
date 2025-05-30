@@ -11,10 +11,13 @@ import Link from "next/link"
 
 interface TeamData {
     teamName: string
-    collegeName: string
-    participantNames: string
-    themes: string
     projectName:string
+    collegeName: string
+    LeaderName: string
+    themes: string
+    Member1:string
+    Member2:string
+    Member3:string
 }
 
 export default function TeamsPage() {
@@ -41,9 +44,14 @@ export default function TeamsPage() {
                 const teamData: TeamData[] = jsonData.map((row) => ({
                     teamName: row["Team Name"] || "",
                     collegeName: row["College Name"] || "",
-                    participantNames: row["Participant Names"] || "",
+                    LeaderName: row["Leader Name"] || "",
                     themes: row["Themes"],
                     projectName:row["Project Name"],
+                    Member1:row["Member 1"],
+                    Member2:row["Member 2"],
+                    Member3:row["Member 3"],
+                    
+                    
                 }))
 
                 setTeams(teamData)
@@ -67,7 +75,7 @@ export default function TeamsPage() {
                 (team) =>
                     team.teamName.toLowerCase().includes(term) ||
                     team.collegeName.toLowerCase().includes(term) ||
-                    team.participantNames.toLowerCase().includes(term),
+                    team.LeaderName.toLowerCase().includes(term),
             )
             setFilteredTeams(filtered)
         }
@@ -94,11 +102,12 @@ export default function TeamsPage() {
                                 <ArrowLeft className="mr-2 h-5 w-5" />
                                 <span>Back to Hackathon</span>
                             </Link>
+                            <Link href="/" >
                             <h1 className="mt-2 text-3xl font-bold md:text-4xl">
                                 <span className="text-red-600">Hack</span>
                                 <span className="text-blue-700">ForNepal</span>
-                                <span className="text-gray-800"> Teams</span>
                             </h1>
+                            </Link>
                         </div>
                         <div className="relative w-full bg-white md:w-72">
                             <Search className="absolute left-3 bg-white top-1/2 h-4 w-4 -translate-y-1/2 text-gray-400" />
@@ -178,7 +187,10 @@ export default function TeamsPage() {
                                                 <Users className="mt-1 h-5 w-5 flex-shrink-0 text-blue-600" />
                                                 <div>
                                                     <h3 className="font-semibold text-gray-800">Participants</h3>
-                                                    <p className="text-gray-600">{team.participantNames}</p>
+                                                    <p className="text-gray-600">{team.LeaderName}</p>
+                                                    <p className="text-gray-600">{team.Member1}</p>
+                                                    <p className="text-gray-600">{team.Member2}</p>
+                                                    <p className="text-gray-600">{team.Member3}</p>
                                                 </div>
                                             </div>
                                         </CardContent>
