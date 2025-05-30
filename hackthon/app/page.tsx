@@ -187,7 +187,7 @@ export default function HackathonPage() {
           {/* Registration Badge */}
           <div className="mb-8 text-center space-y-2">
             {/* Registration Badge */}
-            <div className="inline-flex items-center gap-2 rounded-full bg-blue-100 px-5 py-2 text-blue-700 font-medium shadow-sm">
+            {/* <div className="inline-flex items-center gap-2 rounded-full bg-blue-100 px-5 py-2 text-blue-700 font-medium shadow-sm">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-4 w-4"
@@ -203,7 +203,7 @@ export default function HackathonPage() {
                 />
               </svg>
               Registration Now Open
-            </div>
+            </div> */}
 
             {/* Registration Deadline */}
 
