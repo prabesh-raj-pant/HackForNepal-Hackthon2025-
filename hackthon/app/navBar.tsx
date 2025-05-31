@@ -81,7 +81,7 @@ export default function NavBar() {
                 size="lg"
                 className="bg-red-500 border-gray-300 text-black-900 hover:bg-white-900"
               >
-                View Teams
+                View Participants
               </Button>
             </Link> 
         </nav>

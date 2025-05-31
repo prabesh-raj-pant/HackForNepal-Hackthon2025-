@@ -167,7 +167,7 @@ export default function TeamsPage() {
                                         </CardHeader>
                                         <CardContent className="p-6">
                                             <div className="mb-4">
-                                                <h3 className="text-xl font-semibold">{team.projectName}</h3>
+                                                <h3 className="text-xl font-semibold text-black-900">{team.projectName}</h3>
                                             </div>
                                             <div className="mb-3">
 
