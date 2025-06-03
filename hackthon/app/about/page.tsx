@@ -60,6 +60,13 @@ export default function AboutPage() {
       linkedlink:"https://np.linkedin.com/in/manima-thapa-6593622bb",
     },
     {
+      name: "Aastha Prajapati",
+      role: "marketing and outreach",
+      photo: "/astha.jpeg?height=300&width=300",
+      githublink:"https://github.com/aarthaa",
+      linkedlink:"https://www.linkedin.com/in/aastha-prajapati-77b7b535a",
+    },
+    {
       name: "Abishek Aryal",
       role: "Design and Media Coordinator",
       photo: "/abishek.jpeg?height=300&width=300",

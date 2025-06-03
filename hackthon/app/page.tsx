@@ -43,7 +43,7 @@ export default function HackathonPage() {
   // Format: YYYY, MM (0-11), DD, HH, MM, SS
   // Note: Month is 0-indexed (0 = January, 11 = December)
 
-  const HACKATHON_DATE = new Date(2025, 5, 12, 9, 0, 0); // april 12, 2025 at 9:00 AM
+  const HACKATHON_DATE = new Date(2025, 5, 13, 9, 0, 0); // april 12, 2025 at 9:00 AM
   // =============================================
 
   const [timeLeft, setTimeLeft] = useState({
