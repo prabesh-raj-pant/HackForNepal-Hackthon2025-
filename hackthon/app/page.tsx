@@ -1009,6 +1009,10 @@ export default function HackathonPage() {
                   name: "Panchakumari Mobile Hub",
                   logo: "/panchakumari.jpeg?height=60&width=120",
                 },
+                {
+                  name: "The Shade House",
+                  logo: "/TheShadeHouse.jpeg?height=60&width=120",
+                },
               ].map((partner, i) => (
                 <div
                   key={i}
