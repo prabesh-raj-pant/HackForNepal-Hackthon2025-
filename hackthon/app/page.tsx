@@ -207,17 +207,17 @@ export default function HackathonPage() {
 
             {/* Registration Deadline */}
 
-            <div className="text-sm text-gray-700">
-              <span
+            {/* <div className="text-sm text-gray-700">
+               <span
                 className={`inline-block rounded-md px-3 py-1  font-semibold ${
                   !isRegistrationClosed
                     ? "bg-red-100 text-red-600"
                     : "bg-gray-200 text-gray-600"
                 }`}
               >
-                {registrationStatusMessage}
-              </span>
-            </div>
+                {registrationStatusMessage} 
+              </span> 
+            </div> */}
           </div>
 
           {/* Main Heading */}
@@ -980,6 +980,34 @@ export default function HackathonPage() {
                 {
                   name: "NCIT",
                   logo: "https://ncit.edu.np/frontend/images/resource/ncit-logo.jpeg?height=60&width=120",
+                },
+                {
+                  name: "Rastriya Banijya Bank",
+                  logo: "https://www.rbb.com.np/uploads/config/1731390437-339067.png?height=60&width=120",
+                },
+                {
+                  name: "Broadway Infosys",
+                  logo: "/Broadway.png?height=60&width=120",
+                },
+                {
+                  name: "Wrap Mandu",
+                  logo: "/WrapMandu.PNG?height=60&width=120",
+                },
+                {
+                  name: "Digi Nepal",
+                  logo: "/diginepal.jpg?height=60&width=120",
+                },
+                {
+                  name: "The Admire",
+                  logo: "/Admire.jpeg?height=60&width=120",
+                },
+                {
+                  name: "SysQube Technology",
+                  logo: "/sybque.png?height=60&width=120",
+                },
+                {
+                  name: "Panchakumari Mobile Hub",
+                  logo: "/panchakumari.jpeg?height=60&width=120",
                 },
               ].map((partner, i) => (
                 <div
