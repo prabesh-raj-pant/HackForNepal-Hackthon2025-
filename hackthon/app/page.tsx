@@ -43,48 +43,8 @@ export default function HackathonPage() {
   // Format: YYYY, MM (0-11), DD, HH, MM, SS
   // Note: Month is 0-indexed (0 = January, 11 = December)
 
-  const HACKATHON_DATE = new Date(2025, 5, 13, 9, 0, 0); // april 12, 2025 at 9:00 AM
+  const HACKATHON_DATE = new Date(2025, 5, 13, 9, 0, 0); // June 13, 2025 at 9:00 AM
   // =============================================
-
-  const [timeLeft, setTimeLeft] = useState({
-    days: 0,
-    hours: 0,
-    minutes: 0,
-    seconds: 0,
-  });
-
-  const [isEventPassed, setIsEventPassed] = useState(false);
-
-  useEffect(() => {
-    const calculateTimeLeft = () => {
-      const now = new Date();
-      const difference = HACKATHON_DATE.getTime() - now.getTime();
-
-      if (difference <= 0) {
-        setIsEventPassed(true);
-        return { days: 0, hours: 0, minutes: 0, seconds: 0 };
-      }
-
-      const days = Math.floor(difference / (1000 * 60 * 60 * 24));
-      const hours = Math.floor(
-        (difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
-      );
-      const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
-      const seconds = Math.floor((difference % (1000 * 60)) / 1000);
-
-      return { days, hours, minutes, seconds };
-    };
-
-    // Initial calculation
-    setTimeLeft(calculateTimeLeft());
-
-    // Update every second
-    const timer = setInterval(() => {
-      setTimeLeft(calculateTimeLeft());
-    }, 1000);
-
-    return () => clearInterval(timer);
-  }, []);
 
   // Format date for display
   const formattedEventDate = HACKATHON_DATE.toLocaleDateString("en-US", {
@@ -236,34 +196,18 @@ export default function HackathonPage() {
             Join Nepal's biggest 48 hour hackathon to build solutions that
             empower communities, preserve cultural heritage, and drive
             sustainable development.
-          </p>
-
-          {/* Countdown Timer */}
+          </p>          {/* Hackathon Status */}
           <div className="mb-12">
-            <div className="flex flex-wrap justify-center gap-4">
-              <div className="flex h-24 w-24 flex-col items-center justify-center rounded-lg bg-white p-4 shadow-lg">
-                <span className="text-4xl font-bold text-blue-700">
-                  {timeLeft.days}
-                </span>
-                <span className="text-sm text-gray-500">Days</span>
-              </div>
-              <div className="flex h-24 w-24 flex-col items-center justify-center rounded-lg bg-white p-4 shadow-lg">
-                <span className="text-4xl font-bold text-blue-700">
-                  {timeLeft.hours}
-                </span>
-                <span className="text-sm text-gray-500">Hours</span>
-              </div>
-              <div className="flex h-24 w-24 flex-col items-center justify-center rounded-lg bg-white p-4 shadow-lg">
-                <span className="text-4xl font-bold text-blue-700">
-                  {timeLeft.minutes}
-                </span>
-                <span className="text-sm text-gray-500">Minutes</span>
-              </div>
-              <div className="flex h-24 w-24 flex-col items-center justify-center rounded-lg bg-white p-4 shadow-lg">
-                <span className="text-4xl font-bold text-blue-700">
-                  {timeLeft.seconds}
-                </span>
-                <span className="text-sm text-gray-500">Seconds</span>
+            <div className="flex justify-center">
+              <div className="rounded-lg bg-white p-8 shadow-lg border-2 border-blue-200">
+                <div className="text-center">
+                  <h2 className="text-3xl md:text-4xl font-bold text-blue-700 mb-2">
+                    Hackathon Has Begun!
+                  </h2>
+                  <p className="text-gray-600 text-lg">
+                    The innovation challenge is now live!
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -337,7 +281,7 @@ export default function HackathonPage() {
                         1st Prize
                       </h4>
                       <p className="text-xl font-semibold text-gray-700">
-                        70,000 NPR
+                        70,000 NPR / Equivalent
                       </p>
                     </motion.div>
 
@@ -350,7 +294,7 @@ export default function HackathonPage() {
                         2nd Prize
                       </h4>
                       <p className="text-xl font-semibold text-gray-700">
-                        40,000 NPR
+                        40,000 NPR / Equivalent
                       </p>
                     </motion.div>
 
@@ -363,7 +307,7 @@ export default function HackathonPage() {
                         3rd Prize
                       </h4>
                       <p className="text-xl font-semibold text-gray-700">
-                        30,000 NPR
+                        30,000 NPR / Equivalent
                       </p>
                     </motion.div>
                   </div>
