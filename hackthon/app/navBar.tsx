@@ -1,4 +1,4 @@
-import { Menu, X } from "lucide-react";
+import { Menu, X,Trophy } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
@@ -75,15 +75,17 @@ export default function NavBar() {
               </Button>
             </a>
           )}
-          <Link href="/teams">
+      
+            <Link href="/winners">
               <Button
                 variant="outline"
                 size="lg"
-                className="bg-red-500 border-gray-300 text-black-900 hover:bg-white-900"
+                className="bg-yellow-500 border-yellow-600 text-white hover:bg-yellow-600"
               >
-                View Participants
+                <Trophy className="mr-2 h-4 w-4" />
+                View Winners
               </Button>
-            </Link> 
+            </Link>
         </nav>
 
         {/* Mobile Menu Button */}
