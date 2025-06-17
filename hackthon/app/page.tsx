@@ -202,10 +202,10 @@ export default function HackathonPage() {
               <div className="rounded-lg bg-white p-8 shadow-lg border-2 border-blue-200">
                 <div className="text-center">
                   <h2 className="text-3xl md:text-4xl font-bold text-blue-700 mb-2">
-                    Hackathon Has Begun!
+                  The Hackathon Has Concluded!
                   </h2>
                   <p className="text-gray-600 text-lg">
-                    The innovation challenge is now live!
+                    Thank You for Being Part of the Innovation Challenge.
                   </p>
                 </div>
               </div>
