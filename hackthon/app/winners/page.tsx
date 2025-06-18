@@ -38,7 +38,7 @@ export default function WinnersPage() {
       description:
         "MindBridge is an AI-driven, cross-platform e-learning application tailored specifically for dyslexic individuals. It uses personalized and gamified learning content to improve reading skills, boost confidence, and empower individuals to reach their full potential.",
       category: "Health Tech",
-      image: "/winner.JPG",
+      image: "/winner.jpg",
     },
     {
       position: 2,
@@ -49,7 +49,7 @@ export default function WinnersPage() {
       description:
         "SANDUK: A Family-Health Vault is a purpose-driven digital health ecosystem built on the MERN stack to address the complex and underserved health record-keeping needs of Nepali families. It offers a centralized, multi-user platform that allows tech-savvy family members to manage medical records across generations.",
       category: "Health-Tech",
-      image: "/runnerup.JPG",
+      image: "/runnerup.jpg",
     },
     {
       position: 3,
@@ -60,7 +60,7 @@ export default function WinnersPage() {
       description:
         "NeuroLens is an AI-powered diagnostic tool developed by Team NeuroMedics to identify early symptoms of Alzheimer's and Parkinson's diseases through the analysis of eye movement and speech patterns. Using a basic webcam and microphone, the system captures user data and applies machine learning models to detect cognitive and motor anomalies. ",
       category: "Health-Tech",
-      image: "/second_runnerup.JPG",
+      image: "/second_runnerup.jpg",
     },
   ]
 
@@ -73,7 +73,7 @@ export default function WinnersPage() {
       collegeName: "Far Western University",
       description:
         "KrishiGPT is an advanced GenAI-powered assistant aimed at transforming agriculture in Nepal, particularly in rural and hilly regions where farmers often rely on traditional practices and limited access to expert advice.",
-      image: "/uiux.JPG",
+      image: "/uiux.jpg",
     },
     {
       title: "Most Innovative Solution",
@@ -88,7 +88,7 @@ export default function WinnersPage() {
       collegeName: "Kathmandu University",
       description:
         "Spinovate is a web-based health application designed to promote spinal wellness through exercise tracking and posture correction, utilizing real-time computer vision. This solution provides a proactive way to monitor spinal alignment and guide users through healthier posture habits and spinal exercises. ",
-      image: "/open_innovation.JPG",
+      image: "/open_innovation.jpg",
     },
   ]
 
