@@ -189,7 +189,7 @@ export default function WinnersPage() {
         <div className="container mx-auto px-4">
           <div className="mb-12">
             <h3 className="text-3xl font-bold text-gray-800 text-center mb-8">Top 3 Winners</h3>
-            <div className="grid gap-8 lg:grid-cols-3">
+            <div className="grid gap-8 lg:grid-cols-3 bg-gradient-to-b">
               {winners.map((winner, index) => (
                 <motion.div
                   key={index}
