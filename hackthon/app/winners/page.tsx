@@ -249,7 +249,7 @@ export default function WinnersPage() {
                         </h4>
                         <div className="flex flex-wrap gap-1">
                           {winner.members.map((member, i) => (
-                            <Badge key={i} variant="outline" className="text-xs">
+                            <Badge key={i} variant="outline" className="text-xs text-gray-700">
                               {member}
                             </Badge>
                           ))}
@@ -276,7 +276,7 @@ export default function WinnersPage() {
             viewport={{ once: true }}
           >
             <h3 className="text-3xl font-bold text-gray-800 text-center mb-8">Special Category Awards</h3>
-            <div className="grid gap-8 md:grid-cols-2 max-w-6xl mx-auto">
+            <div className="grid gap-8 md:grid-cols-2 max-w-6xl mx-auto bg-gradient-to-b ">
               {specialAwards.map((award, index) => (
                 <motion.div
                   key={index}
@@ -286,7 +286,7 @@ export default function WinnersPage() {
                   viewport={{ once: true }}
                   whileHover={{ y: -3 }}
                 >
-                  <Card className="h-full border border-gray-200 shadow-lg overflow-hidden">
+                  <Card className="h-full border border-gray-200 shadow-lg overflow-hidden bg-gradient-to-b ">
                     <CardHeader className="bg-gradient-to-r from-purple-500 to-purple-700 text-white pb-3">
                       <CardTitle className="flex items-center gap-2">
                         <Star className="h-5 w-5" />
@@ -322,7 +322,7 @@ export default function WinnersPage() {
                         </h5>
                         <div className="flex flex-wrap gap-1">
                           {award.members.map((member, i) => (
-                            <Badge key={i} variant="outline" className="text-xs">
+                            <Badge key={i} variant="outline" className="text-xs text-gray-700">
                               {member}
                             </Badge>
                           ))}
