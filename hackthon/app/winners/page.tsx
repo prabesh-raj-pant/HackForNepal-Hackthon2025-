@@ -211,7 +211,7 @@ export default function WinnersPage() {
                     </div>
 
                     <CardHeader className="pt-8 pb-4">
-                      <div className="text-center mb-4">
+                      <div className="text-center mb-4 bg-gradient-to-b">
                         <Image
                           src={winner.image || "/placeholder.svg"}
                           alt={`${winner.projectName} project`}
@@ -220,7 +220,7 @@ export default function WinnersPage() {
                           className="w-full h-48 object-cover rounded-lg"
                         />
                       </div>
-                      <CardTitle className="text-center">
+                      <CardTitle className="text-center bg-gradient-to-b">
                         <div className="text-2xl font-bold text-gray-800 mb-1">{winner.teamName}</div>
                         <div className="text-lg text-blue-600 mb-2">{winner.projectName}</div>
                         <div className="text-sm text-gray-600">{winner.collegeName}</div>
